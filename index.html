@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <main class="main">
+
+    <div class="header-p">
+      <img src="images/logo.svg" alt="SPLITTER">
+    </div>
+
+    <section class="container">
+
+      <div class="container-bill ">
+
+        <p class="container-indice">Bill</p>
+        <button class="indice-button" id="button-bill" type="submit">
+          <img src="images/icon-dollar.svg" alt="icon-dollar">
+          <input class="container-input" id="input-bill" type="number" placeholder="0">
+        </button>
+        <p class="container-indice">Select Tip %</p>
+
+        <div class="container-menu">
+          <button class="menu-button" id="button-1" type="submit" style="cursor: pointer;">5%</button>
+          <button class="menu-button" id="button-2" type="submit" style="cursor: pointer;">10%</button>
+          <button class="menu-button" id="button-3" type="submit" style="cursor: pointer;">15%</button>
+          <button class="menu-button" id="button-4" type="submit" style="cursor: pointer;">25%</button>
+          <button class="menu-button" id="button-5" type="submit" style="cursor: pointer;">50%</button>
+          <button class="menu-button" id="button-6" type="submit">
+            <input class="container-input" type="number" placeholder="Custom">
+          </button>
+        </div>
+      
+
+        <div class="container-people">
+          <p class="container-indice">Number of People</p>
+          <p class="container-zero">Cant be a zero</p>
+        </div>
+
+        <button class="indice-button" id="button-person" type="submit">
+          <img src="images/icon-person.svg" alt="icon-person">
+          <input class="container-input" id="input-person" type="number" placeholder="0">
+        </button>
+
+      </div>
+
+      <div class="container-pay">
+        <div class="container-box">
+          <div class="box-uno">
+            <p class="pay">Tip Amount</p>
+            <p class="person">/ person</p>
+          </div>
+          
+          <div class="box-dos">
+            <p class="number"> $0.00</p>
+          </div>
+        </div>
+        
+        <div class="container-box">
+          <div class="box-uno">
+            <p class="pay">Total</p>
+            <p class="person">/ person</p>
+          </div>
+          
+          <div class="box-dos">
+            <p class="number"> $0.00</p>
+          </div>
+        </div>
+
+        <button class="reset" id="reset" type="submit" style="cursor: pointer;">RESET</button>
+
+      </div>
+
+    </section>
+
+  </main>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <!-- Javascript -->
+  <script src="script.js"></script>
+
+</body>
+</html>
