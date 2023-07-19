@@ -42,11 +42,11 @@
         <p class="container-indice">Select Tip %</p>
 
         <div class="container-menu">
-          <button class="menu-button" id="button-1" type="submit" style="cursor: pointer;">5%</button>
-          <button class="menu-button" id="button-2" type="submit" style="cursor: pointer;">10%</button>
-          <button class="menu-button" id="button-3" type="submit" style="cursor: pointer;">15%</button>
-          <button class="menu-button" id="button-4" type="submit" style="cursor: pointer;">25%</button>
-          <button class="menu-button" id="button-5" type="submit" style="cursor: pointer;">50%</button>
+          <button onclick="calcularPorcentaje(5)" class="menu-button" id="button-1" type="submit" style="cursor: pointer;">5%</button>
+          <button onclick="calcularPorcentaje(10)"  class="menu-button" id="button-2" type="submit" style="cursor: pointer;">10%</button>
+          <button onclick="calcularPorcentaje(15)"  class="menu-button" id="button-3" type="submit" style="cursor: pointer;">15%</button>
+          <button onclick="calcularPorcentaje(25)" class="menu-button" id="button-4" type="submit" style="cursor: pointer;">25%</button>
+          <button onclick="calcularPorcentaje(50)"  class="menu-button" id="button-5" type="submit" style="cursor: pointer;">50%</button>
           <button class="menu-button" id="button-6" type="submit">
             <input class="container-input" type="number" placeholder="Custom">
           </button>
@@ -73,7 +73,7 @@
           </div>
           
           <div class="box-dos">
-            <p class="number"> $0.00</p>
+            <p class="number" id="amount">0.00</p>
           </div>
         </div>
         
@@ -84,7 +84,7 @@
           </div>
           
           <div class="box-dos">
-            <p class="number"> $0.00</p>
+            <p class="number" id="total">0.00</p>
           </div>
         </div>
 
